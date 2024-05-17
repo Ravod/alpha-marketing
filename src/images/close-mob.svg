@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 9 9"
+   version="1.1"
+   fill="#ffffff"
+   stroke="#ffffff"
+   id="svg14"
+   sodipodi:docname="close-mob.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="close-mob.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="8.34375"
+     inkscape:cx="32.059925"
+     inkscape:cy="32"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="matrix(0.61672881,0,0,0.62338433,-2.8268528,-3.0104176)"
+     style="fill:#ffffff;stroke:#ffffff">
+    <title
+       id="title4">/svg/ic-cross</title>
+    <desc
+       id="desc6">Created with Sketch.</desc>
+    <defs
+       id="defs8" />
+    <g
+       id="Page-1"
+       stroke="none"
+       stroke-width="1"
+       fill="none"
+       fill-rule="evenodd"
+       style="fill:#ffffff;stroke:#ffffff">
+      <g
+         id="ic-cross"
+         fill="#ffffff"
+         style="fill:#ffffff;stroke:#ffffff">
+        <path
+           d="M 12,10.483476 7.8355766,6.3187101 C 7.4120738,5.8951724 6.7322452,5.8942587 6.3135031,6.3130352 5.8918417,6.7347314 5.8973015,7.4133234 6.3191775,7.835234 L 10.483601,12 6.3191775,16.164766 c -0.421876,0.421911 -0.4273358,1.100503 -0.00567,1.522199 0.4187421,0.418776 1.0985707,0.417863 1.5220735,-0.0057 L 12,13.516524 16.164423,17.68129 c 0.423503,0.423538 1.103332,0.424451 1.522074,0.0057 0.421661,-0.421696 0.416201,-1.100288 -0.0057,-1.522199 L 13.516399,12 17.680823,7.835234 c 0.421875,-0.4219106 0.427335,-1.1005026 0.0057,-1.5221988 -0.418742,-0.4187765 -1.098571,-0.4178628 -1.522074,0.00567 z"
+           id="Combined-Shape"
+           style="fill:#ffffff;stroke:#ffffff" />
+      </g>
+    </g>
+  </g>
+</svg>

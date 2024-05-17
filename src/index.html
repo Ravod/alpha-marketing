@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Пестовский Лесокомбинат - вакансии</title>
+</head>
+
+
+
+
+
+<body>
+
+    <!-- ---------- ********** HEADER ********** ---------- -->
+
+
+    <header class="header">
+        <nav class="header--nav">
+            <button class="header--button__BURGER">
+                <svg class="header--svg" width="24px" height="24px" viewbox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line class="header--line" x1="1" y1="17" x2="99" y2="17" stroke="hsl(0, 0%, 100%)" stroke-width="13" />
+                    <line class="header--line" x1="1" y1="50" x2="99" y2="50" stroke="hsl(0, 0%, 100%)" stroke-width="13" />
+                    <line class="header--line" x1="1" y1="83" x2="99" y2="83" stroke="hsl(0, 0%, 100%)" stroke-width="13" />
+                </svg>
+            </button>
+
+
+            <ul class="header--ul__MENU">
+                <li class="header--li_MENU">
+                    <a class="header--a__MENU" href="#">
+                        <img class="header--img__MENU" src=<%=require("./images/house.svg")%> alt="Домик">
+                        <span class="header--span__MENU">ГЛАВНАЯ</span>
+                    </a>
+                </li>
+                <li class="header--li_MENU">
+                    <a class="header--a__MENU" href="#">
+                        <img class="header--img__MENU" src=<%=require("./images/palace.svg")%> alt="Особняк">
+                        <span class="header--span__MENU">ДОМА</span>
+                    </a>
+                </li>
+                <li class="header--li_MENU">
+                    <a class="header--a__MENU" href="#">
+                        <img class="header--img__MENU" src=<%=require("./images/project.svg")%> alt="Проект">
+                        <span class="header--span__MENU">БАНИ</span>
+                    </a>
+                </li>
+                <li class="header--li_MENU">
+                    <button class="header--button__MENU">ЗАКАЗАТЬ ЗВОНОК</button>
+                </li>
+            </ul>
+
+
+            <a class="header--a__LOGO" href="#">
+                <img class="header--img__LOGO" src=<%=require("./images/logo.svg")%> alt="Логотип компании">
+            </a>
+
+
+            <div class="header--div__PHONE_NUMBERS">
+                <a class="header--a__PHONE" href="tel:+78126037222">8 (812) 603-72-22</a>
+                <a class="header--a__PHONE" href="tel:+74993807733">8 (499) 380-77-33</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+    <main>
+
+        <!-- ---------- ********** СЕКЦИЯ HERO ********** ---------- -->
+
+
+        <section class="hero">
+            <div class="hero--div__HERO">
+                <h1 class="hero--h1">«ПЕСТОВСКИЙ ЛЕСОКОМБИНАТ»</h1>
+                <p class="hero--p">Cтань частью нашей команды!</p>
+                <button class="hero--button">ОТПРАВИТЬ АНКЕТУ</button>
+            </div>
+            
+
+
+
+            <form class="hero--form modal" action="" method="post" enctype="multipart/form-data">
+                <div class="hero--div__HEAD">
+                    <img class="hero--img__CLOSE" src=<%=require("./images/close-mob.svg")%> alt="закрыть">
+                </div>
+
+
+                <div class="hero--div__BODY">
+                    <h2 class="hero--h2 h2">ЗАПОЛНИТЕ АНКЕТУ</h2>
+
+                    <input class="hero--inpit__INFO" type="text" name="name" placeholder="Ф.И.О" autocomplete="on" required>
+
+                    <input class="hero--inpit__INFO" type="tel" name="phone" placeholder="Телефон" autocomplete="on" required>
+
+                    <h3 class="hero--h3" for="vacancy">Отклик на вакансию</h3>
+                    <select class="hero--select__VACANCY" name="vacancy" id="vacancy" required>
+                        <option class="hero--option" value="">Выберите вакансию</option>
+                        <option class="hero--option" value="foreman">Прораб</option>
+                        <option class="hero--option" value="technician">Специалист службы снабжения</option>
+                        <option class="hero--option" value="logistician">Логист</option>
+                        <option class="hero--option" value="designer">Проектировщик</option>
+                    </select>
+
+                    <h3 class="hero--h3" for="file">Ваше резюме</h3>
+                    <p class="hero--p__FILE">
+                        Есть резюме в формате .pdf или .doc?<br/>
+                        Приложите и отправьте его нам.
+                    </p>
+                    <input class="hero--input__FILE" type="file" id="file" accept=".pdf, .doc">
+                    <label class="hero--label__FILE" for="file">ЗАГРУЗИТЬ ФАЙЛ</label>
+
+                    <div class="hero-div__CHECKBOX">
+                        <input class="hero--input__CHECKBOX" type="checkbox" id="checkbox" required>
+                        <label class="hero--label__CHECKBOX" for="checkbox">&#10004;</label>
+                        <p class="hero--p__CHECKBOX">
+                            Я прочитал(а), ознакомился(лась) и согласен(на) с <br> <br>
+                            <a class="hero--a__CHECKBOX" href="#">Политикой конфиденциальности,</a> <br> <br>
+                            <a class="hero--a__CHECKBOX" href="#">Согласием на обработку персональных данных физическим лицом.</a> <br> <br>
+                            Я осознаю, что даю Согласие на обработку персональных данных для использования 
+                            предоставляемых возможностей Веб-сервиса. <br> <br>
+                            Я достиг(ла) 18-летнего возраста
+                        </p>
+                    </div>
+
+                    <button class="hero--button__SUBMIT" type="submit">ОТПРАВИТЬ АНКЕТУ</button>
+                </div>
+            </form>
+
+
+
+
+            <div class="hero--div__DONE modal">
+                <div class="hero--div__HEAD">
+                    <img class="hero--img__CLOSE" src=<%=require("./images/close-mob.svg")%> alt="закрыть">
+                </div>
+
+
+                <div class="hero--div__BODY SECOND">
+                    <h2 class="hero--h2 SECOND h2">АНКЕТА ОТПРАВЛЕНА</h2>
+                    
+                    <img class="hero--img__SUCCESS" src=<%=require("./images/success.svg")%> alt="галочка">
+
+                    <p class="hero--p__SUCCESS">
+                        Благодарим за ваш отклик и интерес. <br><br>
+                        Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.
+                    </p>
+
+                    <button class="hero--button__SUBMIT TO_MAIN">НА ГЛАВНУЮ</button>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ ABOUT ********** ---------- -->
+
+
+        <section class="about">
+            <h2 class="about--h2 h2">О КОМПАНИИ</h2>
+
+            <div class="about--div__BLOCK">
+                <div class="about--div__SQUARE">
+                    <p class="about--p__SQUARE">2</p>
+                </div>
+                <p class="about--p__LABEL">
+                    Города присутствия: <br>
+                    Санкт-Петербург и Москва
+                </p>
+            </div>
+
+            <div class="about--div__BLOCK">
+                <div class="about--div__SQUARE">
+                    <p class="about--p__SQUARE">>30</p>
+                </div>
+                <p class="about--p__LABEL">
+                    Лет среди лидеров рынка
+                </p>
+            </div>
+
+            <div class="about--div__BLOCK">
+                <div class="about--div__SQUARE">
+                    <p class="about--p__SQUARE">100</p>
+                </div>
+                <p class="about--p__LABEL">
+                    Домов и бань сдаём ежегодно
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ VACANCY ********** ---------- -->
+
+
+        <section class="vacancy">
+            <h2 class="vacancy--h2 h2">ВЫБЕРИ ПОДРАЗДЕЛЕНИЕ</h2>
+
+
+            <div class="vacancy--div__HEAD">
+                <button class="vacancy--button selected">СТРОИТЕЛЬНЫЙ ОТДЕЛ</button>
+                <button class="vacancy--button">ОФИС</button>
+                <button class="vacancy--button">ФИНАНСОВЫЙ ОТДЕЛ</button>
+                <button class="vacancy--button">ОТДЕЛ ПРОДАЖ</button>
+                <button class="vacancy--button">ВНЕШТАТНЫЙ СОТРУДНИК</button>
+            </div>
+
+
+            <div class="vacancy--div__BODY">
+                <div class="vacancy--div__BLOCK">
+                    <div class="vacancy--div__VISIBLE">
+                        <div class="vacancy--div__TEXT">
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/vacancy.svg")%> alt="человек">
+                                <span class="vacancy--span__1">Прораб</span>
+                            </p>
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/price.svg")%> alt="человек">
+                                <span class="vacancy--span__2">от 00 000 руб</span>
+                            </p>
+                        </div>
+
+                        <img class="vacancy--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="vacancy--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="vacancy--div__HIDDEN">
+                        <p>Задачи</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Наши ожидания</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Мы предлагаем</p>
+                        <ul class="vacancy--ul">
+                            <li>график 5/2 с гибким началом рабочего дня;</li>
+                            <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                            <li>ежеквартальную премию по итогам работы;</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="vacancy--div__BLOCK">
+                    <div class="vacancy--div__VISIBLE">
+                        <div class="vacancy--div__TEXT">
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/vacancy.svg")%> alt="человек">
+                                <span class="vacancy--span__1">Специалист службы снабжения</span>
+                            </p>
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/price.svg")%> alt="человек">
+                                <span class="vacancy--span__2">от 00 000 руб</span>
+                            </p>
+                        </div>
+
+                        <img class="vacancy--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="vacancy--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="vacancy--div__HIDDEN">
+                        <p>Задачи</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Наши ожидания</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Мы предлагаем</p>
+                        <ul class="vacancy--ul">
+                            <li>график 5/2 с гибким началом рабочего дня;</li>
+                            <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                            <li>ежеквартальную премию по итогам работы;</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="vacancy--div__BLOCK">
+                    <div class="vacancy--div__VISIBLE">
+                        <div class="vacancy--div__TEXT">
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/vacancy.svg")%> alt="человек">
+                                <span class="vacancy--span__1">Логист</span>
+                            </p>
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/price.svg")%> alt="человек">
+                                <span class="vacancy--span__2">Обсуждается на собеседовании</span>
+                            </p>
+                        </div>
+
+                        <img class="vacancy--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="vacancy--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="vacancy--div__HIDDEN">
+                        <p>Задачи</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Наши ожидания</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Мы предлагаем</p>
+                        <ul class="vacancy--ul">
+                            <li>график 5/2 с гибким началом рабочего дня;</li>
+                            <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                            <li>ежеквартальную премию по итогам работы;</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="vacancy--div__BLOCK">
+                    <div class="vacancy--div__VISIBLE">
+                        <div class="vacancy--div__TEXT">
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/vacancy.svg")%> alt="человек">
+                                <span class="vacancy--span__1">Проектировщик</span>
+                            </p>
+                            <p class="vacancy--p">
+                                <img class="vacancy--img" src=<%=require("./images/price.svg")%> alt="человек">
+                                <span class="vacancy--span__2">от 00 000 руб</span>
+                            </p>
+                        </div>
+
+                        <img class="vacancy--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="vacancy--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="vacancy--div__HIDDEN">
+                        <p>Задачи</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Наши ожидания</p>
+                        <ul class="vacancy--ul">
+                            <li>описание</li>
+                            <li>описание</li>
+                            <li>описание</li>
+                        </ul>
+                        <p>Мы предлагаем</p>
+                        <ul class="vacancy--ul">
+                            <li>график 5/2 с гибким началом рабочего дня;</li>
+                            <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                            <li>ежеквартальную премию по итогам работы;</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button class="vacancy--button__RESPOND">ОТКЛИКНУТЬСЯ НА ВАКАНСИЮ</button>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ ADVANTAGES ********** ---------- -->
+
+
+        <section class="advantages">
+            <h2 class="advantages--h2 h2">ПРЕИМУЩЕСТВА КОМПАНИИ</h2>
+
+
+
+            <div class="advantages--div__BODY">
+                <div class="advantages--div__BLOCK">
+                    <div class="advantages--div__VISIBLE">
+                        <p class="advantages--p">Качество продукта</p>
+                        <img class="advantages--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="advantages--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="advantages--div__HIDDEN">
+                        <p class="advantages--p">
+                            Мы гордимся результатами своей работы! 
+                            Мы убеждены, что именно качество — это самое главное, 
+                            это то, что даёт Нам уверенность в завтрашнем дне.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="advantages--div__BLOCK">
+                    <div class="advantages--div__VISIBLE">
+                        <p class="advantages--p">Популярность бренда в сети</p>
+                        <img class="advantages--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="advantages--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="advantages--div__HIDDEN">
+                        <p class="advantages--p">
+                            Мы занимаем высокие позиции в поисковой выдаче 
+                            и имеем многочисленные отзывы, привлекающие новых 
+                            заказчиков независимо от времени года.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="advantages--div__BLOCK">
+                    <div class="advantages--div__VISIBLE">
+                        <p class="advantages--p">Передовое рабочее место</p>
+                        <img class="advantages--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="advantages--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="advantages--div__HIDDEN">
+                        <p class="advantages--p">
+                            Комфортный офис в центре г. Санкт-Петербург, 
+                            оборудованный передовыми технологиями. 
+                            Твой рабочий компьютер может быть даже в твоём смартфоне!
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="advantages--div__BLOCK">
+                    <div class="advantages--div__VISIBLE">
+                        <p class="advantages--p">Свои автоматизированные системы обучения</p>
+                        <img class="advantages--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="advantages--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="advantages--div__HIDDEN">
+                        <p class="advantages--p">
+                            Создали и постоянно улучшаем собственные 
+                            автоматизированные системы обучения специалистов 
+                            и повышения их квалификации внутри компании.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="advantages--div__BLOCK">
+                    <div class="advantages--div__VISIBLE">
+                        <p class="advantages--p">Сотрудничество с ведущими Компаниями рынка</p>
+                        <img class="advantages--img__OPEN" src=<%=require("./images/more.svg")%> alt="раскрыть">
+                        <img class="advantages--img__CLOSE" src=<%=require("./images/close2.svg")%> alt="закрыть">
+                    </div>
+
+                    <div class="advantages--div__HIDDEN">
+                        <p class="advantages--p">
+                            Сотрудничаем с ведущими Компаниями рынка 
+                            строительных материалов: «Grand Line», «Петрович», 
+                            «Окна Петербурга», «КраскиДоски», «Technonicol» и другими.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ PRODUCTS ********** ---------- -->
+
+
+        <section class="products">
+            <h2 class="products--h2 h2">ПРОДУКТЫ КОМПАНИИ</h2>
+
+
+
+            <div class="products--div__HEAD">
+                <button class="products--button selected">БАНИ</button>
+                <button class="products--button">ДОМА</button>
+            </div>
+
+
+
+            <div class="products--div__SWIPER swiper">
+
+                <div class="products--div__SWIPER_WRAPPER swiper-wrapper">
+    
+                    <div class="products--div__SWIPER_SLIDE swiper-slide">
+                        <div class="products--div__BLOCK"></div>
+                    </div>
+                    <div class="products--div__SWIPER_SLIDE swiper-slide">
+                        <div class="products--div__BLOCK"></div>
+                    </div>
+                    <div class="products--div__SWIPER_SLIDE swiper-slide">
+                        <div class="products--div__BLOCK"></div>
+                    </div>
+                    <div class="products--div__SWIPER_SLIDE swiper-slide">
+                        <div class="products--div__BLOCK"></div>
+                    </div>
+                    <div class="products--div__SWIPER_SLIDE swiper-slide">
+                        <div class="products--div__BLOCK"></div>
+                    </div>
+    
+                </div>
+    
+                <div class="products--div__SWIPER_PREV swiper-button-prev"></div>
+                <div class="products--div__SWIPER_NEXT swiper-button-next"></div>
+    
+                <div class="products--div__SWIPER_PAGINATION swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ CAREER ********** ---------- -->
+
+
+        <section class="career">
+            <h2 class="career--h2 h2">КАРЬЕРНЫЙ РОСТ</h2>
+
+
+
+            <p class="career--p">
+                Наша Компания является ярким примером, 
+                где достойные люди смело и заслуженно 
+                поднимаются по карьерной лестнице. <br><br>
+                Мы ценим стремление к развитию и предоставляем 
+                все необходимые для этого условия.
+            </p>
+
+
+
+            <div class="career--div__SWIPER swiper">
+                <div class="career--div__SWIPER_WRAPPER swiper-wrapper">
+                    <div class="career--div__SWIPER_SLIDE swiper-slide">
+                        <div class="career--div__BLOCK">
+                            <picture class="career--picture">
+                                <source type="image/webp" srcset="<%=require('./images/oleg.webp')%>, <%=require('./images/oleg2.webp')%> 2x">
+                                <img class="career--img" src=<%=require("./images/oleg.png")%> alt="Олег Воробьев">
+                            </picture>
+    
+                            <h3 class="career--h3">Олег Воробьев</h3>
+                            <p class="career--p__WORKER">Прораб</p>
+    
+                            <ul class="career--ul">
+                                <li class="career--li">
+                                    В Компании с 2018 года. Начал с позиции плотника 
+                                    в строительной бригаде.
+                                </li><br>
+                                <li class="career--li">
+                                    В течение года работы Олег стал бригадиром и был 
+                                    приглашён в офис Компании на должность 
+                                    штатного Производителя строительных работ. 
+                                </li><br>
+                                <li class="career--li">
+                                    На данный момент в Его подчинении находятся 9 
+                                    строительных бригад. Олег вносит весомый вклад 
+                                    в итоговый результат Компании, а это реализация 
+                                    100 объектов в год!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="career--div__SWIPER_SLIDE swiper-slide">
+                        <div class="career--div__BLOCK">
+                            <picture class="career--picture">
+                                <source type="image/webp" srcset="<%=require('./images/maria.webp')%>, <%=require('./images/maria2.webp')%> 2x">
+                                <img class="career--img" src=<%=require("./images/maria.png")%> alt="Мария Обухова">
+                            </picture>
+    
+                            <h3 class="career--h3">Мария Обухова</h3>
+                            <p class="career--p__WORKER">Руководитель финансовой службы</p>
+    
+                            <ul class="career--ul">
+                                <li class="career--li">
+                                    В декабре 2018 года заступила на должность Менеджера отдела продаж.
+                                </li><br>
+                                <li class="career--li">
+                                    После 9 месяцев стабильных результатов, 
+                                    зарекомендовав себя как надёжный сотрудник, 
+                                    получила ответственную должность Логиста.
+                                </li><br>
+                                <li class="career--li">
+                                    Через год Мария заняла должность Руководителя финансовой службы.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="career--div__SWIPER_SLIDE swiper-slide">
+                        <div class="career--div__BLOCK">
+                            <picture class="career--picture">
+                                <source type="image/webp" srcset="<%=require('./images/daniil.webp')%>, <%=require('./images/daniil2.webp')%> 2x">
+                                <img class="career--img" src=<%=require("./images/daniil.png")%> alt="Даниил Басенков">
+                            </picture>
+    
+                            <h3 class="career--h3">Даниил Басенков</h3>
+                            <p class="career--p__WORKER">Менеджер по снабжению</p>
+    
+                            <ul class="career--ul">
+                                <li class="career--li">
+                                    В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                                </li><br>
+                                <li class="career--li">
+                                    После 9 месяцев стабильных результатов, 
+                                    зарекомендовав себя как надёжный сотрудник, 
+                                    получил ответственную должность Логиста.
+                                </li><br>
+                                <li class="career--li">
+                                    Через год Даниил занял должность Специалиста службы снабжения, 
+                                    взяв на себя помимо закупа материала ещё и крайне важную роль Сметчика.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+    
+                <div class="career--div__SWIPER_PREV swiper-button-prev"></div>
+                <div class="career--div__SWIPER_NEXT swiper-button-next"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ PROGRESS ********** ---------- -->
+
+
+        <section class="progress">
+            <p class="progress--p">
+                Наши успехи — это заслуга замечательных людей, работающих в нашей Команде. <br><br>
+                У Нас всегда есть вакансии для сильных кандидатов
+            </p>
+
+
+
+            <div class="progress--div__JOIN">
+                <p class="progress--p__JOIN">
+                    Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом с Нами!
+                </p>
+
+                <button class="progress--button">ПРИСОЕДИНИТЬСЯ К КОМАНДЕ</button>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- ---------- ********** СЕКЦИЯ CONTACTS ********** ---------- -->
+
+
+        <section class="contacts">
+            <h2 class="contacts--h2 h2">КОНТАКТЫ</h2>
+
+
+
+            <div class="contacts--div__HEAD">
+                <button class="contacts--button selected">САНКТ-ПЕТЕРБУРГ</button>
+                <button class="contacts--button">МОСКВА</button>
+            </div>
+
+
+
+            <div class="contacts--div__BLOCK">
+                <a class="contacts--a__BLOCK tel sel" href="tel:+78126037222">
+                    <img class="contacts--img__BLOCK" src=<%=require("./images/phone.svg")%> alt="телефон">
+                    8 (812) 602-77-60
+                </a>
+                <a class="contacts--a__BLOCK tel" href="tel:+74993807733">
+                    <img class="contacts--img__BLOCK" src=<%=require("./images/phone.svg")%> alt="телефон">
+                    8 (499) 380-77-33
+                </a>
+
+                <a class="contacts--a__BLOCK sel" href="mailto:info@pplk.ru">
+                    <img class="contacts--img__BLOCK" src=<%=require("./images/mail.svg")%> alt="телефон">
+                    info@pplk.ru
+                </a>
+
+                <a class="contacts--a__BLOCK geo sel" href="https://yandex.ru/maps/?ll=30.324797,59.907478&z=17&l=map">
+                    <img class="contacts--img__BLOCK" src=<%=require("./images/placemark.svg")%> alt="телефон">
+                    ул. Заозёрная, д. 8 к. 2, офис 202 <br>
+                    (7 мин. пешком от метро Фрунзенская)
+                </a>
+                <a class="contacts--a__BLOCK geo" href="https://yandex.ru/maps/?ll=37.592698,55.800914&z=17&l=map">
+                    <img class="contacts--img__BLOCK" src=<%=require("./images/placemark.svg")%> alt="телефон">
+                    ул. Складочная, д. 1, стр. 18, подъезд 3, этаж 2, офис 209
+                </a>
+            </div>
+
+
+
+            <div class="contacts--div__SN">
+                <a class="contacts--a__SN" href="https://www.youtube.com/@pplk_ru">
+                    <img class="contacts--img__SN" src=<%=require("./images/youtube.svg")%> alt="Youtube">
+                </a>
+                <a class="contacts--a__SN" href="https://vk.com/doma_i_bani_iz_brusa">
+                    <img class="contacts--img__SN" src=<%=require("./images/vk.svg")%> alt="ВКонтакте">
+                </a>
+                <a class="contacts--a__SN" href="https://t.me/plkombinat">
+                    <img class="contacts--img__SN" src=<%=require("./images/telegram.svg")%> alt="Телеграм">
+                </a>
+            </div>
+        </section>
+
+
+
+
+
+        <iframe class="map sel" src="https://yandex.ru/map-widget/v1/?um=constructor%3A52346d0ed036c82cf9696cf98bd82be57baaa61d6dd662240d02768e2d780350&amp;source=constructor" 
+            width="100%" height="240" frameborder="0">
+        </iframe>
+
+
+        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1e4d08d203a3f8fc3f8b19763eab63744936740e09f1216bbbf95963715cc87f&amp;source=constructor" 
+            width="100%" height="240" frameborder="0">
+        </iframe>    
+    </main>
+
+
+
+
+
+
+
+    <!-- ---------- ********** FOOTER ********** ---------- -->
+
+
+    <footer class="footer">
+        <p class="footer--p">
+            © 2023 Пестовский Лесокомбинат. <br>
+            Все права защищены.
+        </p>
+
+
+        <a class="footer--a" href="#">Реквизиты</a>
+        <a class="footer--a" href="#">Политика конфиденциальности</a>
+
+
+        <img class="footer--img" src=<%=require("./images/logo-footer.svg")%> alt="логотип">
+    </footer>
+</body>
+</html>
